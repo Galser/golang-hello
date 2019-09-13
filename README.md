@@ -3,7 +3,6 @@
 GoLang program that prints hello
 
 # TODO 
-- [ ] Create VM with Vagrant
 - [ ] Install go programing lang
   - [ ] Create instructions section - how to create box and install Go
 - [ ] Configure go environment
@@ -16,3 +15,4 @@ GoLang program that prints hello
 
 # DONE
 
+- [x] Create VM with Vagrant
