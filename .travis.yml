@@ -1,18 +1,12 @@
-language: generic
+language: go
 dist: bionic
 sudo: required
 # update (it's not done by default)
 before_install:
   - sudo apt-get update
   - sudo apt-get install -y wget 
-# get teh required GO version 
-before_script:
-  - wget -nv --directory-prefix=/tmp https://dl.google.com/go/go1.13.linux-amd64.tar.gz
-  - sudo tar -C /usr/local/ -xvf /tmp/go1.13.linux-amd64.tar.gz
-  - mkdir $HOME/go
-env:
-  - GOROOT=/usr/local/go
-  - GOPATH=$HOME/go
+go:
+  - 1.13
 script:
-  - /usr/local/go/bin/go build hello.go
+  - go build hello.go
   - bash test-hello.sh
