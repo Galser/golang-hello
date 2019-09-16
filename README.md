@@ -28,10 +28,13 @@ In order to run the code, you need to start the VM and provisioned it. The [Vagr
 7. In case you want to check source-code, it is available inside the vm here ```/vagrant/hello.go```
 
 
-# TODO 
+# NOTES
 
-- [ ] travis setup release
-- [ ] run release and do visual check for uploaded release
+*The code in releases currently is Linux 64Bit ELF executable.*
+For example this binary :  [0.0.1](https://github.com/Galser/golang-hello/releases/download/0.0.1/hello) 
+
+
+# TODO 
 
 # DONE
 
@@ -48,6 +51,8 @@ In order to run the code, you need to start the VM and provisioned it. The [Vagr
 - [x] travis test that check for hello (travis run green build)
   - [x] create test
   - [x] make travis provision config for test
+- [x] travis setup release
+- [x] run release and do visual check for uploaded release
 
 
 Thank You! 
