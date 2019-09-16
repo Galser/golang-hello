@@ -18,7 +18,6 @@ As a prerequisite you will need git command-line tools or other way to clone thi
 
 # TODO 
 
-- [ ] Configure go environment
 - [ ] update instructions for the step
 - [ ] Create sample main.go file
 - [ ] Compile the code
@@ -31,3 +30,4 @@ As a prerequisite you will need git command-line tools or other way to clone thi
 - [x] Create VM with Vagrant
 - [x] Install go programing lang
 - [x] Create instructions/usage section - how to create box and install Go
+- [x] Configure go environment
