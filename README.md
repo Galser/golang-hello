@@ -13,7 +13,7 @@ As a prerequisite you will need git command-line tools or other way to clone thi
 In order to run the code you need to start the VM and provisioned it. The [Vagrantfile](Vagrantfile), supplied with this repo contains all necessary step automated, just follow the short instruction below :
 
 1. Install **Vagrant** , please follow instructions here : [official Vargant installation manual](https://www.vagrantup.com/docs/installation/)
-2. Do git clone of this repo
+2. Do ``git clone`` of this repo
 2. Cd to cloned repo folder 
 3. Execute from command line ``vagrant up``
 
@@ -21,6 +21,7 @@ In order to run the code you need to start the VM and provisioned it. The [Vagra
 
 # TODO 
 
+- [ ] Tune provision to include automated run of hello.go for testing purpose
 - [ ] Update instructions for create vm - provision it - compile and run the code
 
 
