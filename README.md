@@ -52,7 +52,8 @@ For example this binary :  [0.0.1](https://github.com/Galser/golang-hello/releas
   - [x] create test
   - [x] make travis provision config for test
 - [x] travis setup release
-- [x] run release and do visual check for uploaded release
+- [x] run release and do visual check for uploaded release :
+    !(Screenshot with release binary)[github-release-screenshot.png]
 
 
 Thank You! 
