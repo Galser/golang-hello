@@ -1,13 +1,21 @@
 language: go
 dist: bionic
 sudo: required
-# update (it's not done by default)
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y wget 
+- sudo apt-get update
+- sudo apt-get install -y wget
 go:
-  - 1.13
+- 1.13
 before_script:
-  - go build hello.go
+- go build hello.go
 script:
-  - bash test-hello.sh
+- bash test-hello.sh
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: X/qudekhwHbaOpfr+DrUdCuwWRKUgdpBUtwMFrNwOSSPicCN/ifjUDwAKSz96HHefNZyICmYWz+VvndrsHvx/waWSwMx01++KzPngWAvKKR+R5QMDZ6AJmX8tr83//F/xSaZJjeAZ1c8m4UIcvdYDepCApgknpZJzS8fHvm9TUF8BCbsNoNBCtoQNqW/nVo958HhNN2b+5dO6++lRZw4smcZfm8oVmtrGwmS1SGwh+LFb6XU7jhj1TxqgmjF5UFB85qK0xNbwotdm+QQ6taoRO8ihABicLiAC99qP+ibh6ti+IoTWjtMlFKTPDgsaSXg/5ChlxTZSIIZkjbCFuuSkRcXfPOGE9iPxmCy+hM0zfzs8OH6b9yt9FwlaFHIdBrh2eYn43O1hPIUCFZ7qAozND/AITW/qlpzbxnKAkkpxVQPwHrfBBAnOstANM4iFsgnPeYjRepto80ZzVB+IbcATd/vzJTH+Cr1z156DFqDjbOYztFj2sf9PvxIi5JTbwliqKaxwQ601C2vlK7W6Ivp5RFbdMJvUjTcoXIr03LxWl0Fi45/HefDKeYHh42vdaji/9ztzI/PxMf7o693j0AO1fa7jjMF2AdvlnLt+jXmKjFoLsMLQNEA1zhZv6ZvNZ/swhEsgIKtQoXluxAkHII2mr9Byi7cpnNZPZYIJHEOa10=
+  file: hello
+  on:
+    repo: Galser/golang-hello
+    tags: true
