@@ -21,9 +21,6 @@ In order to run the code you need to start the VM and provisioned it. The [Vagra
 
 # TODO 
 
-- [ ] Create sample main.go file
-- [ ] Compile the code
-- [ ] Run the code
 - [ ] Update instructions for create vm - provision it - compile and run the code
 
 
@@ -34,3 +31,7 @@ In order to run the code you need to start the VM and provisioned it. The [Vagra
 - [x] Create instructions/usage section - how to create box and install Go
 - [x] Configure go environment
 - [x] update instructions for the step
+- [x] Create sample main.go file
+- [x] Compile the code
+- [x] Run the code
+
