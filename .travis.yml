@@ -14,5 +14,5 @@ env:
   - GOROOT=/usr/local/go
   - GOPATH=$HOME/go
 script:
-  - bash go build hello.go
+  - /usr/local/go/bin/go build hello.go
   - bash test-hello.sh
