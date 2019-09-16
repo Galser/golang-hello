@@ -1,15 +1,16 @@
 language: go
 dist: bionic
 sudo: required
-before_install:
-- sudo apt-get update
-- sudo apt-get install -y wget
+
 go:
 - 1.13
+
 before_script:
 - go build hello.go
+
 script:
 - bash test-hello.sh
+
 deploy:
   provider: releases
   skip_cleanup: true
