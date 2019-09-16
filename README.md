@@ -30,6 +30,11 @@ In order to run the code, you need to start the VM and provisioned it. The [Vagr
 
 # TODO 
 
+- [ ] travis test that check for hello (travis run green build)
+  - [ ] create test
+  - [ ] make travis provision config for test
+- [ ] travis setup release
+- [ ] run release and do visual check for uploaded release
 
 # DONE
 
