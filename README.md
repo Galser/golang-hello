@@ -31,7 +31,7 @@ In order to run the code, you need to start the VM and provisioned it. The [Vagr
 # TODO 
 
 - [ ] travis test that check for hello (travis run green build)
-  - [ ] create test
+  - [x] create test
   - [ ] make travis provision config for test
 - [ ] travis setup release
 - [ ] run release and do visual check for uploaded release
@@ -48,6 +48,8 @@ In order to run the code, you need to start the VM and provisioned it. The [Vagr
 - [x] Run the code
 - [x] Tune provision to include the automated run of hello.go for testing purpose
 - [X] Update instructions for creating VM - provision it - compile and run the code
+- Travis test : 
+  - [x] create test
 
 
 Thank You! 
