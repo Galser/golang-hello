@@ -1,6 +1,6 @@
 # Description
 
-GoLang program that prints hello. This repository provides appropriate instructions and files to provision your own [Vagrant](https://www.vagrantup.com/) environment and run inside it the sample **"hello"** program. 
+GoLang program that prints hello. To run this programm we are going to use virtual machine managed by Vagrant -  tool for building and managing virtual machine environments in a single workflow. This repository provides appropriate instructions and files to provision your own VM with [Vagrant](https://www.vagrantup.com/) environment and run inside it the sample **"hello"** program. 
 
 *Code had been tested under MacOs Mojave 10.14.6 and Ubuntu 18.04.3 LTS (Bionic Beaver)*
 
