@@ -13,20 +13,20 @@ This repository contains GoLang program that prints hello. To run this program w
 2. In addition, as we want to run our code inside VM you will need some way of running virtualization, the providers for this step may vary a lot from architecture to architecture, but one that can be recommended as first time approach is **VirtualBox**, download the binaries for your [platform here](https://www.virtualbox.org/wiki/Downloads) and then follow [instructions for installation](https://www.virtualbox.org/manual/ch02.html)
 3. As the last-step, we need **Vagrant** - to build and manage VM. To install **Vagrant** , please follow instructions here : [official Vargant installation manual](https://www.vagrantup.com/docs/installation/)
 
-Two prerequisites above
 
 ## Instructions
 
-In order to run the code, you need to create the VM and provision it. The [Vagrantfile](Vagrantfile), supplied with this repo contains all necessary step automated, just follow the short instruction below :
+In order to run the program, you need to create the VM and provision it. The [Vagrantfile](Vagrantfile), supplied with this repo contains all necessary steps automated, just follow the short instruction below :
 
-1. You need to download the copy of the code, so - run in terminal ``git clone https://github.com/Galser/golang-hello.git`` ; in case you are using other Git Client - please follow appropriate instruction and download(clone)) [this repo](https://github.com/Galser/golang-hello.git). 
-2. Locate folder that now should contain the copy of repository and open it. To do this in UNIX Terminal type ``cd location_to_the_folder_with_repo_copy`` 
+1. To download the copy of the code (*clone* in Git terminology) - run in terminal ``git clone https://github.com/Galser/golang-hello.git`` ; in case you are using other Git Client - please follow appropriate instruction and download(*clone*) [this repo](https://github.com/Galser/golang-hello.git). 
+2. Previous step should create the folder(directory) that contains the copy of repository. Normally the name is going to be ``golang-hello``. Locate and open it. To do this in UNIX Terminal type ``cd location_to_the_folder_with_repo_copy`` 
 3. To create and provision virtual machine with Vagrant - execute from command line ``vagrant up``
-4. Now wait, Vagrant will download the operation system image, do all the steps, and when the machine is started and provision successfully finished, you should see as the last two lines: 
+4. Now wait, at first Vagrant will download the operation system image (and it can take some time), do all the required steps, and *when the machine is started and provision successfully finished*, you should see as the last two lines: 
 ```
     default: Compile and build were successful, executing our program : 
     default: hello
 ```
+Where ``hello`` is the output of our compiled Go program.
 5. At this point, you can try to run the program yourself, VM already up and running , so you can use SSH client to connect to it. For example for Linux and MacOS - execute from command-line : ``vagrant ssh``
 6. Now you are in the VM's shell, to run the program just execute  ``hello``, you should see response **hello**
 7. While still inside virtual machine, you may be curious about the code.  It is available inside the vm in this location  ``/vagrant/hello.go``
@@ -39,7 +39,7 @@ Answer 'y' from keyboard, and you are good to go
 # NOTES
 
 *The code in releases currently is Linux 64Bit ELF executable.*
-For example this binary :  [0.0.1](https://github.com/Galser/golang-hello/releases/download/0.0.1/hello) 
+For example this binary :  [0.0.1](https://github.com/Galser/golang-hello/releases/download/0.0.1/hello)
 
 
 # TODO
