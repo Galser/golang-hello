@@ -19,8 +19,8 @@ This repository contains GoLang program that prints hello. To run this program w
 In order to run the program, you need to create the VM and provision it. The [Vagrantfile](Vagrantfile), supplied with this repo contains all necessary steps automated, just follow the short instruction below :
 
 1. To download the copy of the code (*clone* in Git terminology) - go to the location of your choice (normally some place in home folder) and run in terminal ``git clone https://github.com/Galser/golang-hello.git`` ; in case you are using alternative Git Client - please follow appropriate instruction for it and download(*clone*) [this repo](https://github.com/Galser/golang-hello.git). 
-2. Previous step should create the folder that contains the copy of repository. Default ame is going to be the same as teh name of repository e.g. ``golang-hello``. Locate and open it. To do this in UNIX Terminal execute ``cd golang-hello`` 
-3. To create and provision virtual machine with Vagrant - execute from command line ``vagrant up``
+2. Previous step should create the folder that contains the copy of repository. Default name is going to be the same as the name of repository e.g. ``golang-hello``. Locate and open it. To do this in UNIX Terminal execute ``cd golang-hello`` 
+3. To create and provision virtual machine with Vagrant - execute from command line ``vagrant up`` ( *This will utilize settings from [Vagrantfile](Vagrantfile)* )
 4. Now wait, at first Vagrant will download the operation system image (and it can take some time), do all the required steps, and *when the machine is started and provision successfully finished*, you should see as the last two lines: 
 ```
     default: Compile and build were successful, executing our program : 
@@ -31,7 +31,7 @@ Where ``hello`` is the output of our compiled Go program. Congratulation!
 6. Now you are in the VM's shell, to run the program just execute  ``hello``, you should see response **hello**
 7. While still inside virtual machine, you may be curious about the code.  It is available inside the vm in this location  ``/vagrant/hello.go``
 8. When you've done with the tests and don't need VM shell anymore - you should exit the SSH session - by executing in command line ``exit``
-9. To completely destroy the VM and free up all your system resource (CPU, memory) you will need to give to vagrant instruction to do so, execute from command line ``vagrant destroy``. Next you should see the question on a new line :
+9. To completely destroy the VM and free up all your system resource (CPU, memory) you will need to give Vagrant instruction to do so - execute from command line ``vagrant destroy``. Next you should see the question on a new line :
 ``` default: Are you sure you want to destroy the 'default' VM? [y/N]  ```
 Answer 'y' from keyboard, and you are good to go
 
